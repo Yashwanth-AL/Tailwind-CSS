@@ -7,37 +7,80 @@
     <title>Microsoft - Cloud, Computers, Apps and Gaming</title>
   </head>
   <body>
-    <div class="navbar flex justify-between items-center p-4 relative">
-        <div class="flex justify-between items-center w-full md:hidden">
-            <div class="hamburger p-4 cursor-pointer">
-                <div class="line bg-black w-6 h-0.5 my-1"></div>
-                <div class="line bg-black w-6 h-0.5 my-1"></div>
-                <div class="line bg-black w-6 h-0.5 my-1"></div>
-            </div>
-            <div class="search p-2 ml-auto">Search</div>
+    <div class="navbar flex justify-between items-center p-3 h-14 relative">
+
+      <!-- Hamburger and Search for small screens -->
+      <div class="flex justify-between items-center w-full md:hidden">
+        <div class="flex items-center">
+          <div class="hamburger p-4 cursor-pointer">  
+            <div class="line bg-black w-6 h-0.5 my-1"></div>
+            <div class="line bg-black w-6 h-0.5 my-1"></div>
+            <div class="line bg-black w-6 h-0.5 my-1"></div>
+          </div>
+          <div class="search p-2 ml-2"><img src="./Images/search.svg" alt="search"></div>
         </div>
-     
-        <div class="logo flex items-center md:static absolute left-1/2 transform -translate-x-1/2 md:left-0 md:transform-none">
-            <img src="./Images/favicon.ico" alt="Microsoft" class="w-6 h-6" />
-            <div class="text-lg font-bold md:text-gray-600 ml-2">Microsoft</div>
-        </div>
-        
-        <div class="features absolute md:static w-full md:w-auto bg-gray-200 md:bg-white left-0 md:flex md:mx-4 md:space-x-2 transform -translate-x-full md:translate-x-0">
-            <div class="fiitems p-2 text-center">Microsoft 365</div>
-            <div class="fiitems p-2 text-center">Teams</div>
-            <div class="fiitems p-2 text-center">Copilot</div>
-            <div class="fiitems p-2 text-center">Windows</div>
-            <div class="fiitems p-2 text-center">Surface</div>
-            <div class="fiitems p-2 text-center">Xbox</div>
-            <div class="fiitems p-2 text-center">Support</div>
-         </div>
-        
-        <div class="cart text-center flex ml-auto md:order-3">
-            <div class="search hidden md:block p-2">All Microsoft</div>
-            <div class="search hidden md:block p-2">Search</div>
-            <div class="account p-2">Cart</div>
-            <div class="account p-2">Account</div>
-        </div>
+      </div>
+
+      <!-- Logo section -->
+      <div class="logo flex items-center md:static absolute left-1/2 transform -translate-x-1/2 md:left-0 md:transform-none md:ml-6">
+        <img src="./Images/favicon.ico" alt="Microsoft" class="w-6 h-6" />
+        <div class="text-lg font-bold md:text-gray-600 ml-2">Microsoft</div>
+      </div>
+
+      <!-- Features section -->
+      <div class="features absolute md:static w-full md:w-auto bg-gray-200 md:bg-white left-0 md:flex md:mx-4 md:space-x-2 transform -translate-x-full md:translate-x-0 text-sm cursor-pointer">
+        <div class="fiitems p-2 text-center">Microsoft 365</div>
+        <div class="fiitems p-2 text-center">Teams</div>
+        <div class="fiitems p-2 text-center">Copilot</div>
+        <div class="fiitems p-2 text-center">Windows</div>
+        <div class="fiitems p-2 text-center">Surface</div>
+        <div class="fiitems p-2 text-center">Xbox</div>
+        <div class="fiitems p-2 text-center">Support</div>
+      </div>
+
+      <!-- Cart and Account section -->
+      <div class="cart text-center items-center flex ml-auto md:order-3 mr-6">
+        <div class="search hidden md:block p-2 text-sm cursor-pointer">All Microsoft</div>
+        <div class="search hidden md:block p-2"><img src="./Images/search.svg" alt="search"></div>
+        <div class="account p-2 "><img src="./Images/cart3.svg" alt="cart"></div>
+        <div class="account p-2 "><img src="./Images/person-add.svg" alt="account"></div>
+      </div>
+    </div> 
+
+    <div class="slider flex flex-col-reverse md:flex-row bg-[#e7eff9]">
+      <div class="left flex flex-col justify-center items-center md:items-start p-4 md:p-8 lg:pl-24 lg:pr-12 xl:pl-32 xl:pr-16 space-y-4 md:space-y-6">
+        <button class="bg-[#ffb900] hover:bg-[#caa234] text-black font-semibold py-1 px-4 rounded">New</button>
+        <h1 class="text-3xl font-semibold">Meet Surface Laptop</h1>
+        <p class="text-center md:text-left">Unlock AI features like Captions and Cocreator with this exceptionally powerful laptop</p>
+        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Learn More</button>
+      </div>
+      <div class="right flex justify-center md:justify-end w-full">
+        <img src="./Images/copilot.png" alt="Copilot" class="w-full md:w-auto">
+      </div>
     </div>
+
+    <div class="flex flex-wrap justify-around items-center p-4 mx-36">
+      <div class="flex flex-col items-center p-4">
+          <img src="./Images/windows.svg" alt="Grid Icon" class="w-8 h-8">
+          <span class="text-center mt-2 text-blue-700 font-semibold underline hover:cursor-pointer">Choose your Microsoft 365</span>
+      </div>
+      <div class="flex flex-col items-center p-4">
+          <img src="./Images/shop-xbox-icon.svg" alt="Xbox Logo" class="w-8 h-8">
+          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer">Shop Xbox</span>
+      </div>
+      <div class="flex flex-col items-center p-4">
+          <img src="./Images/windows.svg" alt="Windows Logo" class="w-8 h-8">
+          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer">Get Windows 11</span>
+      </div>
+      <div class="flex flex-col items-center p-4">
+          <img src="./Images/surfaces devices icon.svg" alt="Surface Devices Icon" class="w-8 h-8">
+          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer">Explore Surface devices</span>
+      </div>
+    </div>
+
+    <div class="mx-20 mt-4 mb-4"><img src="./Images/reviews.avif" class=""></div>
+
+    
+        
   </body>
 </html>
