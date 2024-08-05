@@ -7,6 +7,8 @@
     <title>Microsoft - Cloud, Computers, Apps and Gaming</title>
   </head>
   <body>
+
+    <!-- navbar section -->
     <div class="navbar flex justify-between items-center p-3 h-14 relative">
 
       <!-- Hamburger and Search for small screens -->
@@ -28,25 +30,26 @@
       </div>
 
       <!-- Features section -->
-      <div class="features absolute md:static w-full md:w-auto bg-gray-200 md:bg-white left-0 md:flex md:mx-4 md:space-x-2 transform -translate-x-full md:translate-x-0 text-sm cursor-pointer">
-        <div class="fiitems p-2 text-center">Microsoft 365</div>
-        <div class="fiitems p-2 text-center">Teams</div>
-        <div class="fiitems p-2 text-center">Copilot</div>
-        <div class="fiitems p-2 text-center">Windows</div>
-        <div class="fiitems p-2 text-center">Surface</div>
-        <div class="fiitems p-2 text-center">Xbox</div>
-        <div class="fiitems p-2 text-center">Support</div>
+      <div class="features absolute md:static w-full md:w-auto bg-gray-200 md:bg-white left-0 md:flex md:mx-4 md:space-x-2 transform -translate-x-full md:translate-x-0 text-sm">
+        <div class="fiitems p-2 text-center hover:cursor-pointer hover:underline hover:underline-offset-4">Microsoft 365</div>
+        <div class="fiitems p-2 text-center hover:cursor-pointer hover:underline hover:underline-offset-4">Teams</div>
+        <div class="fiitems p-2 text-center hover:cursor-pointer hover:underline hover:underline-offset-4">Copilot</div>
+        <div class="fiitems p-2 text-center hover:cursor-pointer hover:underline hover:underline-offset-4">Windows</div>
+        <div class="fiitems p-2 text-center hover:cursor-pointer hover:underline hover:underline-offset-4">Surface</div>
+        <div class="fiitems p-2 text-center hover:cursor-pointer hover:underline hover:underline-offset-4">Xbox</div>
+        <div class="fiitems p-2 text-center hover:cursor-pointer hover:underline hover:underline-offset-4">Support</div>
       </div>
 
       <!-- Cart and Account section -->
       <div class="cart text-center items-center flex ml-auto md:order-3 mr-6">
-        <div class="search hidden md:block p-2 text-sm cursor-pointer">All Microsoft</div>
+        <div class="search hidden md:block p-2 text-sm hover:cursor-pointer hover:underline hover:underline-offset-4">All Microsoft</div>
         <div class="search hidden md:block p-2"><img src="./Images/search.svg" alt="search"></div>
         <div class="account p-2 "><img src="./Images/cart3.svg" alt="cart"></div>
         <div class="account p-2 "><img src="./Images/person-add.svg" alt="account"></div>
       </div>
     </div> 
 
+    <!-- slider section -->
     <div class="slider flex flex-col-reverse md:flex-row bg-[#e7eff9]">
       <div class="left flex flex-col justify-center items-center md:items-start p-4 md:p-8 lg:pl-24 lg:pr-12 xl:pl-32 xl:pr-16 space-y-4 md:space-y-6">
         <button class="bg-[#ffb900] hover:bg-[#caa234] text-black font-semibold py-1 px-4 rounded">New</button>
@@ -59,28 +62,96 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap justify-around items-center p-4 mx-36">
+    <!-- promo section  -->
+    <div class=" promo flex flex-wrap justify-around items-center p-4 mx-36">
       <div class="flex flex-col items-center p-4">
           <img src="./Images/windows.svg" alt="Grid Icon" class="w-8 h-8">
-          <span class="text-center mt-2 text-blue-700 font-semibold underline hover:cursor-pointer">Choose your Microsoft 365</span>
+          <span class="text-center mt-2 text-blue-700 font-semibold underline hover:cursor-pointer hover:text-blue-800">Choose your Microsoft 365</span>
       </div>
       <div class="flex flex-col items-center p-4">
           <img src="./Images/shop-xbox-icon.svg" alt="Xbox Logo" class="w-8 h-8">
-          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer">Shop Xbox</span>
+          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer hover:text-blue-800">Shop Xbox</span>
       </div>
       <div class="flex flex-col items-center p-4">
           <img src="./Images/windows.svg" alt="Windows Logo" class="w-8 h-8">
-          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer">Get Windows 11</span>
+          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer hover:text-blue-800">Get Windows 11</span>
       </div>
       <div class="flex flex-col items-center p-4">
           <img src="./Images/surfaces devices icon.svg" alt="Surface Devices Icon" class="w-8 h-8">
-          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer">Explore Surface devices</span>
+          <span class="text-center mt-2  text-blue-700 font-semibold underline hover:cursor-pointer hover:text-blue-800">Explore Surface devices</span>
       </div>
     </div>
 
-    <div class="mx-20 mt-4 mb-4"><img src="./Images/reviews.avif" class=""></div>
+    <!-- review section -->
+    <div class="mx-20 mt-4 mb-4"><img src="./Images/review.png" class=""></div>
 
-    
-        
+    <!-- footer section -->
+    <footer class="bg-white dark:bg-gray-900">
+      <div class="container px-6 py-2 mx-auto">
+          <div class="grid grid-cols-2 gap-3 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+              <div>
+                  <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Whats new</h3>
+
+                  <div class="flex flex-col items-start mt-4 space-y-4">
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Surface Pro</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Surface Laptop</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Microsoft copilot</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Microsoft 365</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Windows 11 apps</a>
+                  </div>
+              </div>
+
+              <div>
+                  <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Microsoft store</h3>
+
+                  <div class="flex flex-col items-start mt-4 space-y-4">
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Account profile</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Dowlnoad center</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Microsoft store support</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Returns</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Order tracking</a>
+                  </div>
+              </div>
+
+              <div>
+                  <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Company</h3>
+
+                  <div class="flex flex-col items-start mt-4 space-y-4">
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Careers</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">About Microsoft</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Company news</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Privacy at Microsoft</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Security</a>
+                  </div>
+              </div>
+
+              <div>
+                  <h3 class="text-sm font-medium text-gray-500 dark:text-gray-400">Education</h3>
+
+                  <div class="flex flex-col items-start mt-4 space-y-4">
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Microsoft in Education</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">devices for Education</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Microsoft Teams for Education</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Office Education</a>
+                      <a href="#" class="text-gray-700 transition-colors duration-200 dark:text-gray-200 dark:hover:text-blue-400 hover:underline hover:text-blue-600">Assure for Students</a>
+                  </div>
+              </div>
+
+              
+          </div>
+          
+          <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700">
+          
+          <div class="flex flex-col items-center justify-between sm:flex-row mb-4">
+            <div class="logo flex items-center md:static absolute left-1/2 transform -translate-x-1/2 md:left-0 md:transform-none md:ml-6">
+              <img src="./Images/favicon.ico" alt="Microsoft" class="w-6 h-6" />
+              <div class="text-lg font-bold md:text-white ml-2">Microsoft</div>
+            </div>
+
+              <p class="mt-4 text-sm text-gray-500 sm:mt-0 dark:text-gray-300">© Copyright 2023. All Rights Reserved.</p>
+          </div>
+      </div>
+    </footer>
+
   </body>
 </html>
